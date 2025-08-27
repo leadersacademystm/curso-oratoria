@@ -71,9 +71,16 @@
       font-weight: 700;
     }
     h1 {
-      font-size: clamp(1.8rem, 2.5vw + 1rem, 2.8rem);
+      font-size: 2.2rem; /* Tamanho fixo para desktop */
       margin: 20px 0 0;
       line-height: 1.2;
+      white-space: nowrap; /* Impede quebra de linha */
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem; /* Tamanho menor para mobile */
+        white-space: normal; /* Permite quebra de linha em mobile */
+      }
     }
     p.lead {
       color: #d4d4d4;
@@ -373,7 +380,7 @@
             {key: 'B', label: 'Usar histórias e apelo emocional para motivar'},
             {key: 'C', label: 'Estruturar o conteúdo em etapas claras, como uma aula'},
             {key: 'D', label: 'Interagir e criar um ambiente de diálogo'},
-            {key: 'E', label: 'Apresentar fatos e evidências para embasar minha fala'}
+            {key: 'E', label: 'Apresentar fatos и evidências para embasar minha fala'}
           ]
         },
         {
