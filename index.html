@@ -51,27 +51,19 @@
     }
     .brand-badge {
       margin-bottom: 24px;
+      display: flex;
+      justify-content: center;
     }
-    .logo {
+    .main-logo {
       height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto;
-      font-weight: 700;
-      font-size: 2.2rem;
-      color: var(--accent);
-      text-align: center;
-      letter-spacing: 1px;
+      width: auto;
+      object-fit: contain;
     }
-    .small-logo {
+    .secondary-logo {
       height: 70px;
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.8;
     }
     h1, h2, h3 {
       font-family: 'Montserrat', sans-serif;
@@ -255,13 +247,25 @@
     }
     .footer-logo {
       height: 50px;
-      font-weight: 700;
-      font-size: 1.2rem;
-      color: var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.8;
       margin-bottom: 12px;
+    }
+    /* Fallback para caso as imagens não carreguem */
+    .logo-fallback {
+      display: none;
+      font-weight: 700;
+      font-size: 2.2rem;
+      color: var(--accent);
+    }
+    /* Mostrar fallback se imagem não carregar */
+    img.main-logo:before, img.secondary-logo:before, img.footer-logo:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      background: #f1f1f1;
+      border: 1px solid #ccc;
     }
   </style>
 </head>
@@ -270,7 +274,8 @@
     <section id="step-welcome" class="step active">
       <div class="card center">
         <div class="brand-badge">
-          <div class="logo">LEADER'S ACADEMY</div>
+          <img src="logo-principal.png" alt="Leader's Academy — Logo" class="main-logo" onerror="this.style.display='none'; document.getElementById('main-logo-fallback').style.display='block';">
+          <div id="main-logo-fallback" class="logo-fallback">LEADER'S ACADEMY</div>
         </div>
         <h1>Descubra Seu Perfil de Comunicador</h1>
         <p class="lead">Um diagnóstico rápido para você se comunicar com mais clareza, impacto e verdade.</p>
@@ -283,7 +288,8 @@
         <div class="q-header">
           <div style="font-weight:600;color:var(--primary)"><span id="qIndex">1</span>/4</div>
           <div class="progress"><div id="bar"></div></div>
-          <div class="small-logo">LA</div>
+          <img src="logo-secundario.png" alt="Leader's Academy" class="secondary-logo" onerror="this.style.display='none'; document.getElementById('secondary-logo-fallback').style.display='block';">
+          <div id="secondary-logo-fallback" class="logo-fallback" style="display:none; font-size: 1.5rem;">LA</div>
         </div>
         <div id="qContainer"></div>
         <div class="btn-row">
@@ -310,7 +316,8 @@
       <div class="card">
         <div class="center">
           <div class="brand-badge">
-            <div class="logo">LEADER'S ACADEMY</div>
+            <img src="logo-principal.png" alt="Leader's Academy — Logo" class="main-logo" onerror="this.style.display='none'; document.getElementById('result-logo-fallback').style.display='block';">
+            <div id="result-logo-fallback" class="logo-fallback" style="display:none;">LEADER'S ACADEMY</div>
           </div>
           <h2 class="result-title" id="resTitle"></h2>
           <p id="resSubtitle" class="muted"></p>
@@ -359,7 +366,8 @@
     </section>
 
     <footer>
-      <div class="footer-logo">LEADER'S ACADEMY</div>
+      <img src="logo-secundario.png" alt="Leader's Academy" class="footer-logo" onerror="this.style.display='none'; document.getElementById('footer-logo-fallback').style.display='block';">
+      <div id="footer-logo-fallback" class="logo-fallback" style="display:none; font-size: 1.2rem;">LEADER'S ACADEMY</div>
       <small class="muted">Desenvolvido por Paulo Afonso</small>
     </footer>
   </div>
