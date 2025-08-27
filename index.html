@@ -55,7 +55,7 @@
       justify-content: center;
     }
     .main-logo {
-      height: 220px; /* Aumentado de 180px para 220px */
+      height: 220px;
       width: auto;
       object-fit: contain;
     }
@@ -64,6 +64,7 @@
       width: auto;
       object-fit: contain;
       opacity: 0.8;
+      filter: brightness(0) invert(1); /* Torna a logo clara/branca */
     }
     h1, h2, h3 {
       font-family: 'Montserrat', sans-serif;
@@ -84,9 +85,9 @@
     }
     p.lead {
       color: #d4d4d4;
-      margin: 1rem 0 0; /* Margem reduzida */
-      font-size: 1.1rem; /* Tamanho reduzido de 1.2rem para 1.1rem */
-      white-space: nowrap; /* Impede quebra de linha */
+      margin: 1rem 0 0;
+      font-size: 1.1rem;
+      white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
@@ -261,6 +262,10 @@
       padding: 28px 0;
       text-align: center;
       color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     .footer-logo {
       height: 60px;
@@ -268,6 +273,13 @@
       object-fit: contain;
       opacity: 0.8;
       margin-bottom: 12px;
+      filter: brightness(0) invert(1); /* Torna a logo clara/branca */
+    }
+    .reflection-header {
+      margin-bottom: 12px; /* Aumenta o espaçamento abaixo do título */
+    }
+    .reflection-subtitle {
+      margin-top: 8px; /* Adiciona espaçamento acima do subtítulo */
     }
   </style>
 </head>
@@ -289,7 +301,7 @@
         <div class="q-header">
           <div style="font-weight:600;color:var(--primary)"><span id="qIndex">1</span>/4</div>
           <div class="progress"><div id="bar"></div></div>
-          <img src="logo-secundario.png" alt="Leader's Academy" class="secondary-logo">
+          <img src="logo-principal.png" alt="Leader's Academy" class="secondary-logo">
         </div>
         <div id="qContainer"></div>
         <div class="btn-row">
@@ -347,8 +359,8 @@
         </div>
         
         <div class="card" style="box-shadow:none;border:1px dashed #555;background:#333">
-          <h3 style="margin-top:0;color:var(--accent)">Espelho de Reflexão Pessoal</h3>
-          <p class="muted" style="margin-top:-10px; font-size: 0.9rem;">Anote em sua apostila para aprofundar.</p>
+          <h3 class="reflection-header" style="color:var(--accent)">Espelho de Reflexão Pessoal</h3>
+          <p class="muted reflection-subtitle" style="font-size: 0.9rem;">Anote em sua apostila para aprofundar.</p>
           <ul class="list">
             <li>Perfil predominante: ______</li>
             <li>Me identifiquei porque: ______</li>
@@ -365,7 +377,7 @@
     </section>
 
     <footer>
-      <img src="logo-secundario.png" alt="Leader's Academy" class="footer-logo">
+      <img src="logo-principal.png" alt="Leader's Academy" class="footer-logo">
       <small class="muted">Desenvolvido por Paulo Afonso</small>
     </footer>
   </div>
