@@ -55,7 +55,7 @@
       justify-content: center;
     }
     .main-logo {
-      height: 180px;
+      height: 220px; /* Aumentado de 180px para 220px */
       width: auto;
       object-fit: contain;
     }
@@ -71,21 +71,31 @@
       font-weight: 700;
     }
     h1 {
-      font-size: 2.2rem; /* Tamanho fixo para desktop */
+      font-size: 2.2rem;
       margin: 20px 0 0;
       line-height: 1.2;
-      white-space: nowrap; /* Impede quebra de linha */
+      white-space: nowrap;
     }
     @media (max-width: 768px) {
       h1 {
-        font-size: 1.8rem; /* Tamanho menor para mobile */
-        white-space: normal; /* Permite quebra de linha em mobile */
+        font-size: 1.8rem;
+        white-space: normal;
       }
     }
     p.lead {
       color: #d4d4d4;
-      margin: 1.2rem 0 0;
-      font-size: 1.2rem;
+      margin: 1rem 0 0; /* Margem reduzida */
+      font-size: 1.1rem; /* Tamanho reduzido de 1.2rem para 1.1rem */
+      white-space: nowrap; /* Impede quebra de linha */
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    @media (max-width: 768px) {
+      p.lead {
+        font-size: 1rem;
+        white-space: normal;
+        text-overflow: clip;
+      }
     }
     .btn {
       appearance: none;
@@ -380,7 +390,7 @@
             {key: 'B', label: 'Usar histórias e apelo emocional para motivar'},
             {key: 'C', label: 'Estruturar o conteúdo em etapas claras, como uma aula'},
             {key: 'D', label: 'Interagir e criar um ambiente de diálogo'},
-            {key: 'E', label: 'Apresentar fatos и evidências para embasar minha fala'}
+            {key: 'E', label: 'Apresentar fatos e evidências para embasar minha fala'}
           ]
         },
         {
