@@ -1,195 +1,188 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leader's Academy — Diagnóstico de Comunicador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #333333; /* Charcoal */
+      --card: #404040;
+      --text: #F4F4F4; /* Alabaster */
+      --primary: #FFFFFF; /* White */
+      --accent: #C7A462; /* Prestige Gold */
+      --accent-2: #b8904a;
+      --muted: #888888;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:'Montserrat', sans-serif;line-height:1.5;}
+    .wrap{max-width:880px;margin:0 auto;padding:24px;}
+    .card{background:var(--card);border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.2);padding:24px; border: 1px solid #555;}
+    .center{text-align:center;}
+    .brand-badge img{height:80px;width:auto; margin-bottom: 16px;} /* Aumentado de 56px para 80px */
+    h1, h2, h3 {font-family: 'Montserrat', sans-serif; color: var(--primary); font-weight: 700;}
+    h1{font-size:clamp(1.8rem, 2.5vw + 1rem, 2.8rem);margin:8px 0 0; line-height: 1.2;}
+    p.lead{color:#d4d4d4;margin:.5rem 0 0; font-size: 1.1rem;}
+    .btn{appearance:none;border:0;background:var(--accent);color:#333333;padding:14px 22px;border-radius:12px;font-weight:700;cursor:pointer; font-family: 'Montserrat', sans-serif; font-size: 1rem; transition: transform .2s ease, background-color .2s ease;}
+    .btn:hover{background: #E0C48F; transform: translateY(-2px);}
+    .btn.ghost{background:transparent;border:2px solid var(--primary);color:var(--primary);}
+    .btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+    .step{display:none;}
+    .step.active{display:block;}
+    .q-header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px;}
+    .q-header img { height: 80px; opacity: .8; }
+    .progress{height:8px;background:#555;border-radius:999px;overflow:hidden;}
+    .progress > div{height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));transition:width .35s ease;}
+    fieldset{border:0;padding:0;margin:0;}
+    .options{display:grid;gap:10px;}
+    .opt{display:flex;align-items:center;gap:12px;padding:14px;border:2px solid #555;background:#444;border-radius:12px;cursor:pointer;transition:border-color .2s ease, background-color .2s ease; color: var(--text);}
+    .opt:hover{border-color:var(--accent); background-color: #4a4a4a;}
+    .opt input{accent-color:var(--accent);width:18px;height:18px;}
+    .muted{color:var(--muted);}
+    .spinner{display:flex;flex-direction:column;align-items:center;gap:12px;padding:32px;}
+    .dots{display:inline-flex;gap:6px;}
+    .dot{width:10px;height:10px;background:var(--accent);border-radius:50%;animation:bounce 1.2s infinite;}
+    .dot:nth-child(2){animation-delay:.15s;}
+    .dot:nth-child(3){animation-delay:.3s;}
+    @keyframes bounce{0%,80%,100%{transform:scale(.7);opacity:.5;}40%{transform:scale(1);opacity:1;}}
+    .result-title{font-size:1.8rem;margin:0; color: var(--accent); font-weight: 700;}
+    .result-pill{display:inline-block;background: #444;border:1px solid #555;color:var(--accent);padding:6px 12px;border-radius:999px;font-weight:600;font-size: 0.9rem;}
+    .two-col{display:grid;grid-template-columns:1fr;gap:16px;}
+    @media(min-width:760px){.two-col{grid-template-columns:1fr 1fr;}}
+    .list{margin:0;padding-left:20px;line-height: 1.6; color: var(--text);}
+    footer{padding:28px 0;text-align:center;color:var(--muted);}
+    footer img{height:40px;opacity:.8;} /* Aumentado de 32px para 40px */
+  </style>
+</head>
+<body>
+  <div class="wrap">
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="pt-BR">\
-<head>\
-  <meta charset="UTF-8" />\
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\
-  <title>Leader's Academy \'97 Diagn\'f3stico de Comunicador</title>\
-  <link rel="preconnect" href="https://fonts.googleapis.com">\
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">\
-  <style>\
-    :root \{\
-      --bg: #333333; /* Charcoal */\
-      --card: #404040;\
-      --text: #F4F4F4; /* Alabaster */\
-      --primary: #FFFFFF; /* White */\
-      --accent: #C7A462; /* Prestige Gold */\
-      --accent-2: #b8904a;\
-      --muted: #888888;\
-    \}\
-    *\{box-sizing:border-box;\}\
-    body\{margin:0;background:var(--bg);color:var(--text);font-family:'Montserrat', sans-serif;line-height:1.5;\}\
-    .wrap\{max-width:880px;margin:0 auto;padding:24px;\}\
-    .card\{background:var(--card);border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.2);padding:24px; border: 1px solid #555;\}\
-    .center\{text-align:center;\}\
-    .brand-badge img\{height:80px;width:auto; margin-bottom: 16px;\} /* Aumentado de 56px para 80px */\
-    h1, h2, h3 \{font-family: 'Montserrat', sans-serif; color: var(--primary); font-weight: 700;\}\
-    h1\{font-size:clamp(1.8rem, 2.5vw + 1rem, 2.8rem);margin:8px 0 0; line-height: 1.2;\}\
-    p.lead\{color:#d4d4d4;margin:.5rem 0 0; font-size: 1.1rem;\}\
-    .btn\{appearance:none;border:0;background:var(--accent);color:#333333;padding:14px 22px;border-radius:12px;font-weight:700;cursor:pointer; font-family: 'Montserrat', sans-serif; font-size: 1rem; transition: transform .2s ease, background-color .2s ease;\}\
-    .btn:hover\{background: #E0C48F; transform: translateY(-2px);\}\
-    .btn.ghost\{background:transparent;border:2px solid var(--primary);color:var(--primary);\}\
-    .btn-row\{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;\}\
-    .step\{display:none;\}\
-    .step.active\{display:block;\}\
-    .q-header\{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px;\}\
-    .q-header img \{ height: 80px; opacity: .8; \}\
-    .progress\{height:8px;background:#555;border-radius:999px;overflow:hidden;\}\
-    .progress > div\{height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));transition:width .35s ease;\}\
-    fieldset\{border:0;padding:0;margin:0;\}\
-    .options\{display:grid;gap:10px;\}\
-    .opt\{display:flex;align-items:center;gap:12px;padding:14px;border:2px solid #555;background:#444;border-radius:12px;cursor:pointer;transition:border-color .2s ease, background-color .2s ease; color: var(--text);\}\
-    .opt:hover\{border-color:var(--accent); background-color: #4a4a4a;\}\
-    .opt input\{accent-color:var(--accent);width:18px;height:18px;\}\
-    .muted\{color:var(--muted);\}\
-    .spinner\{display:flex;flex-direction:column;align-items:center;gap:12px;padding:32px;\}\
-    .dots\{display:inline-flex;gap:6px;\}\
-    .dot\{width:10px;height:10px;background:var(--accent);border-radius:50%;animation:bounce 1.2s infinite;\}\
-    .dot:nth-child(2)\{animation-delay:.15s;\}\
-    .dot:nth-child(3)\{animation-delay:.3s;\}\
-    @keyframes bounce\{0%,80%,100%\{transform:scale(.7);opacity:.5;\}40%\{transform:scale(1);opacity:1;\}\}\
-    .result-title\{font-size:1.8rem;margin:0; color: var(--accent); font-weight: 700;\}\
-    .result-pill\{display:inline-block;background: #444;border:1px solid #555;color:var(--accent);padding:6px 12px;border-radius:999px;font-weight:600;font-size: 0.9rem;\}\
-    .two-col\{display:grid;grid-template-columns:1fr;gap:16px;\}\
-    @media(min-width:760px)\{.two-col\{grid-template-columns:1fr 1fr;\}\}\
-    .list\{margin:0;padding-left:20px;line-height: 1.6; color: var(--text);\}\
-    footer\{padding:28px 0;text-align:center;color:var(--muted);\}\
-    footer img\{height:40px;opacity:.8;\} /* Aumentado de 32px para 40px */\
-  </style>\
-</head>\
-<body>\
-  <div class="wrap">\
-\
-    <section id="step-welcome" class="step active">\
-      <div class="card center">\
-        <div class="brand-badge">\
-          <img src="logo-principal.png" alt="Leader's Academy \'97 Logo" />\
-        </div>\
-        <h1>Descubra Seu Perfil de Comunicador</h1>\
-        <p class="lead">Um diagn\'f3stico r\'e1pido para voc\'ea se comunicar com mais clareza, impacto e verdade.</p>\
-        <div style="height:24px"></div>\
-        <button id="startBtn" class="btn">Iniciar Diagn\'f3stico</button>\
-      </div>\
-    </section>\
-\
-    <section id="step-questions" class="step">\
-      <div class="card">\
-        <div class="q-header">\
-          <div style="font-weight:600;color:var(--primary)"><span id="qIndex">1</span>/4</div>\
-          <div class="progress" style="flex:1"><div id="bar"></div></div>\
-          <img src="logo-secundario.png" alt="Leader's Academy" />\
-        </div>\
-        <div id="qContainer"></div>\
-        <div class="btn-row" style="margin-top:16px">\
-          <button class="btn ghost" id="prevBtn">Voltar</button>\
-          <button class="btn" id="nextBtn">Pr\'f3ximo</button>\
-        </div>\
-      </div>\
-    </section>\
-\
-    <section id="step-processing" class="step">\
-      <div class="card center">\
-        <div class="spinner">\
-          <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>\
-          <div id="procMsg" class="muted">Analisando suas respostas\'85</div>\
-        </div>\
-      </div>\
-    </section>\
-\
-    <section id="step-result" class="step">\
-      <div class="card">\
-        <div class="center">\
-          <div class="brand-badge">\
-            <img src="logo-principal.png" alt="Leader's Academy \'97 Logo" />\
-          </div>\
-          <h2 class="result-title" id="resTitle" style="margin-top:8px"></h2>\
-          <p id="resSubtitle" class="muted" style="margin-top:4px"></p>\
-          <div style="height:12px"></div>\
-          <span id="resPill" class="result-pill"></span>\
-        </div>\
-        <div style="height:24px"></div>\
-        <div class="two-col">\
-          <div class="card" style="box-shadow:none;border:1px solid #555">\
-            <h3 style="margin-top:0;color:var(--primary)">Os 5 Perfis de Comunicador</h3>\
-            <ul class="list">\
-              <li><strong>Vendedor (A)</strong>: persuasivo, focado em resultados.</li>\
-              <li><strong>Inspirador (B)</strong>: emocional, motivacional, carism\'e1tico.</li>\
-              <li><strong>Instrutor (C)</strong>: did\'e1tico, organizado, claro.</li>\
-              <li><strong>Conector (D)</strong>: emp\'e1tico, pr\'f3ximo, acess\'edvel.</li>\
-              <li><strong>Autoridade (E)</strong>: t\'e9cnico, respeitado, confi\'e1vel.</li>\
-            </ul>\
-          </div>\
-          <div class="card" style="box-shadow:none;border:1px solid #555">\
-            <h3 style="margin-top:0;color:var(--primary)">\'c1reas de Desenvolvimento</h3>\
-            <ul class="list">\
-              <li><strong>Vendedor</strong>: pode parecer interesseiro.</li>\
-              <li><strong>Inspirador</strong>: pode faltar estrutura t\'e9cnica.</li>\
-              <li><strong>Instrutor</strong>: pode ser menos envolvente.</li>\
-              <li><strong>Conector</strong>: pode faltar assertividade.</li>\
-              <li><strong>Autoridade</strong>: pode ser distante do p\'fablico.</li>\
-            </ul>\
-          </div>\
-        </div>\
-        <div style="height:16px"></div>\
-        <div class="card" style="box-shadow:none;border:1px dashed #555;background:#333">\
-          <h3 style="margin-top:0;color:var(--accent)">Espelho de Reflex\'e3o Pessoal</h3>\
-          <p class="muted" style="margin-top:-10px; font-size: 0.9rem;">Anote em sua apostila para aprofundar.</p>\
-          <ul class="list">\
-            <li>Perfil predominante: ______</li>\
-            <li>Me identifiquei porque: ______</li>\
-            <li>Que tipo de comunicador sou hoje? ______</li>\
-            <li>Em qual tipo quero evoluir? ______</li>\
-            <li>Pr\'f3ximo passo revelado pelo diagn\'f3stico: ______</li>\
-          </ul>\
-        </div>\
-        <div class="btn-row" style="margin-top:24px">\
-          <button class="btn" id="resetBtn">Refazer Diagn\'f3stico</button>\
-        </div>\
-      </div>\
-    </section>\
-\
-    <footer class="wrap">\
-        <img src="logo-secundario.png" alt="Leader's Academy"/>\
-        <small class="muted" style="margin-top: 8px;">Desenvolvido por Paulo Afonso</small>\
-    </footer>\
-  </div>\
-  <script>\
-    window.addEventListener('DOMContentLoaded', () => \{\
-      const questions=[\
-        \{title:"Quando estou diante de uma plateia, meu maior medo \'e9\'85",options:[\{key:'A',label:'N\'e3o convencer ou influenciar'\},\{key:'B',label:'N\'e3o gerar uma conex\'e3o emocional'\},\{key:'C',label:'Que minha explica\'e7\'e3o seja confusa'\},\{key:'D',label:'Parecer distante ou inacess\'edvel'\},\{key:'E',label:'Questionarem meus dados ou credibilidade'\}]\},\
-        \{title:"Durante minha fala, eu costumo\'85",options:[\{key:'A',label:'Focar em argumentos que levam a uma decis\'e3o'\},\{key:'B',label:'Usar hist\'f3rias e apelo emocional para motivar'\},\{key:'C',label:'Estruturar o conte\'fado em etapas claras, como uma aula'\},\{key:'D',label:'Interagir e criar um ambiente de di\'e1logo'\},\{key:'E',label:'Apresentar fatos e evid\'eancias para embasar minha fala'\}]\},\
-        \{title:"Para prender a aten\'e7\'e3o, confio no meu\'85",options:[\{key:'A',label:'Poder de persuas\'e3o e na for\'e7a dos argumentos'\},\{key:'B',label:'Energia, paix\'e3o e na capacidade de inspirar'\},\{key:'C',label:'Organiza\'e7\'e3o, did\'e1tica e na clareza da explica\'e7\'e3o'\},\{key:'D',label:'Empatia, autenticidade e na conex\'e3o com as pessoas'\},\{key:'E',label:'Conhecimento t\'e9cnico e na minha credibilidade'\}]\},\
-        \{title:"Me vejo mais como algu\'e9m que \'e9\'85",options:[\{key:'A',label:'Persuasivo e orientado a resultados'\},\{key:'B',label:'Motivador e carism\'e1tico'\},\{key:'C',label:'Did\'e1tico e organizado'\},\{key:'D',label:'Acess\'edvel e emp\'e1tico'\},\{key:'E',label:'T\'e9cnico e especialista no assunto'\}]\}\
-      ];\
-      const keyToProfile=\{\
-        A:\{name:'Vendedor',desc:'Persuasivo e focado em resultados. Sua for\'e7a est\'e1 em convencer e influenciar decis\'f5es.'\},\
-        B:\{name:'Inspirador',desc:'Emocional, motivacional e carism\'e1tico. Voc\'ea se destaca por conectar emocionalmente e motivar a a\'e7\'e3o.'\},\
-        C:\{name:'Instrutor',desc:'Did\'e1tico, organizado e claro. Sua principal habilidade \'e9 transmitir conhecimento eficazmente.'\},\
-        D:\{name:'Conector',desc:'Emp\'e1tico, pr\'f3ximo e acess\'edvel. Voc\'ea tem a capacidade de criar relacionamentos genu\'ednos.'\},\
-        E:\{name:'Autoridade',desc:'T\'e9cnico, respeitado e confi\'e1vel. Sua credibilidade e expertise s\'e3o seus maiores trunfos.'\}\
-      \};\
-      let current=0,answers=[];\
-      const qIndexEl=document.getElementById('qIndex'),barEl=document.getElementById('bar'),qContainer=document.getElementById('qContainer');\
-      const startBtn=document.getElementById('startBtn'),nextBtn=document.getElementById('nextBtn'),prevBtn=document.getElementById('prevBtn'),resetBtn=document.getElementById('resetBtn');\
-      function goTo(step)\{['step-welcome','step-questions','step-processing','step-result'].forEach((id,idx)=>document.getElementById(id).classList.toggle('active',idx===step));if(step===1)\{current=0;answers=[];renderQ();updateProgress();\}\}\
-      function renderQ()\{const q=questions[current];qIndexEl.textContent=current+1;let html=`<h2 style=\\"margin:8px 0 16px 0; color:var(--primary); font-size: 1.6rem; line-height: 1.3;\\">$\{q.title\}</h2><fieldset class=\\"options\\">`;q.options.forEach(opt=>html+=`<label class='opt'><input type='radio' name='q$\{current\}' value='$\{opt.key\}'/><span><strong>$\{opt.key\})</strong> $\{opt.label\}</span></label>`);html+='</fieldset>';qContainer.innerHTML=html;\}\
-      function updateProgress()\{barEl.style.width=((current)/questions.length*100)+'%';\}\
-      function nextQ()\{const sel=document.querySelector(`input[name='q$\{current\}']:checked`);if(!sel)\{alert('Selecione uma alternativa para continuar.');return;\}answers[current]=sel.value;if(current<questions.length-1)\{current++;renderQ();updateProgress();\}else\{barEl.style.width='100%';processResult();\}\}\
-      function prevQ()\{if(current===0)goTo(0);else\{current--;renderQ();updateProgress();\}\}\
-      function processResult()\{goTo(2);const msgs=['Analisando suas respostas\'85','Calculando seu perfil de comunicador\'85','Conclu\'eddo.'];let i=0;const pm=document.getElementById('procMsg');(function tick()\{pm.textContent=msgs[i++];if(i<msgs.length)setTimeout(tick,900);else setTimeout(showResult,600);\})();\}\
-      function showResult()\{const counts=\{A:0,B:0,C:0,D:0,E:0\};answers.forEach(k=>counts[k]++);const sorted=Object.entries(counts).sort((a,b)=>b[1]-a[1]),top=sorted[0],second=sorted[1];const resTitle=document.getElementById('resTitle'),resSubtitle=document.getElementById('resSubtitle'),resPill=document.getElementById('resPill');if(top[1]===second[1]&&top[1]!==0)\{const p1=keyToProfile[top[0]].name,p2=keyToProfile[second[0]].name;resTitle.textContent=`$\{p1\} + $\{p2\}`;resSubtitle.textContent=`Voc\'ea transita entre os perfis $\{p1\} e $\{p2\}, unindo o melhor dos dois mundos.`;resPill.textcontent=`Empate: $\{top[1]\}\'d7$\{second[1]\}`;\}else\{const p=keyToProfile[top[0]];resTitle.textContent=p.name;resSubtitle.textContent=p.desc;resPill.textContent=`Predominante: $\{top[1]\} ponto(s)`;\}goTo(3);\}\
-      startBtn.addEventListener('click',()=>goTo(1));\
-      nextBtn.addEventListener('click',nextQ);\
-      prevBtn.addEventListener('click',prevQ);\
-      resetBtn.addEventListener('click',()=>goTo(0));\
-    \});\
-  </script>\
-</body>\
-</html>}
+    <section id="step-welcome" class="step active">
+      <div class="card center">
+        <div class="brand-badge">
+          <img src="logo-principal.png" alt="Leader's Academy — Logo" />
+        </div>
+        <h1>Descubra Seu Perfil de Comunicador</h1>
+        <p class="lead">Um diagnóstico rápido para você se comunicar com mais clareza, impacto e verdade.</p>
+        <div style="height:24px"></div>
+        <button id="startBtn" class="btn">Iniciar Diagnóstico</button>
+      </div>
+    </section>
+
+    <section id="step-questions" class="step">
+      <div class="card">
+        <div class="q-header">
+          <div style="font-weight:600;color:var(--primary)"><span id="qIndex">1</span>/4</div>
+          <div class="progress" style="flex:1"><div id="bar"></div></div>
+          <img src="logo-secundario.png" alt="Leader's Academy" />
+        </div>
+        <div id="qContainer"></div>
+        <div class="btn-row" style="margin-top:16px">
+          <button class="btn ghost" id="prevBtn">Voltar</button>
+          <button class="btn" id="nextBtn">Próximo</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="step-processing" class="step">
+      <div class="card center">
+        <div class="spinner">
+          <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <div id="procMsg" class="muted">Analisando suas respostas…</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="step-result" class="step">
+      <div class="card">
+        <div class="center">
+          <div class="brand-badge">
+            <img src="logo-principal.png" alt="Leader's Academy — Logo" />
+          </div>
+          <h2 class="result-title" id="resTitle" style="margin-top:8px"></h2>
+          <p id="resSubtitle" class="muted" style="margin-top:4px"></p>
+          <div style="height:12px"></div>
+          <span id="resPill" class="result-pill"></span>
+        </div>
+        <div style="height:24px"></div>
+        <div class="two-col">
+          <div class="card" style="box-shadow:none;border:1px solid #555">
+            <h3 style="margin-top:0;color:var(--primary)">Os 5 Perfis de Comunicador</h3>
+            <ul class="list">
+              <li><strong>Vendedor (A)</strong>: persuasivo, focado em resultados.</li>
+              <li><strong>Inspirador (B)</strong>: emocional, motivacional, carismático.</li>
+              <li><strong>Instrutor (C)</strong>: didático, organizado, claro.</li>
+              <li><strong>Conector (D)</strong>: empático, próximo, acessível.</li>
+              <li><strong>Autoridade (E)</strong>: técnico, respeitado, confiável.</li>
+            </ul>
+          </div>
+          <div class="card" style="box-shadow:none;border:1px solid #555">
+            <h3 style="margin-top:0;color:var(--primary)">Áreas de Desenvolvimento</h3>
+            <ul class="list">
+              <li><strong>Vendedor</strong>: pode parecer interesseiro.</li>
+              <li><strong>Inspirador</strong>: pode faltar estrutura técnica.</li>
+              <li><strong>Instrutor</strong>: pode ser menos envolvente.</li>
+              <li><strong>Conector</strong>: pode faltar assertividade.</li>
+              <li><strong>Autoridade</strong>: pode ser distante do público.</li>
+            </ul>
+          </div>
+        </div>
+        <div style="height:16px"></div>
+        <div class="card" style="box-shadow:none;border:1px dashed #555;background:#333">
+          <h3 style="margin-top:0;color:var(--accent)">Espelho de Reflexão Pessoal</h3>
+          <p class="muted" style="margin-top:-10px; font-size: 0.9rem;">Anote em sua apostila para aprofundar.</p>
+          <ul class="list">
+            <li>Perfil predominante: ______</li>
+            <li>Me identifiquei porque: ______</li>
+            <li>Que tipo de comunicador sou hoje? ______</li>
+            <li>Em qual tipo quero evoluir? ______</li>
+            <li>Próximo passo revelado pelo diagnóstico: ______</li>
+          </ul>
+        </div>
+        <div class="btn-row" style="margin-top:24px">
+          <button class="btn" id="resetBtn">Refazer Diagnóstico</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="wrap">
+        <img src="logo-secundario.png" alt="Leader's Academy"/>
+        <small class="muted" style="margin-top: 8px;">Desenvolvido por Paulo Afonso</small>
+    </footer>
+  </div>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const questions=[
+        {title:"Quando estou diante de uma plateia, meu maior medo é…",options:[{key:'A',label:'Não convencer ou influenciar'},{key:'B',label:'Não gerar uma conexão emocional'},{key:'C',label:'Que minha explicação seja confusa'},{key:'D',label:'Parecer distante ou inacessível'},{key:'E',label:'Questionarem meus dados ou credibilidade'}]},
+        {title:"Durante minha fala, eu costumo…",options:[{key:'A',label:'Focar em argumentos que levam a uma decisão'},{key:'B',label:'Usar histórias e apelo emocional para motivar'},{key:'C',label:'Estruturar o conteúdo em etapas claras, como uma aula'},{key:'D',label:'Interagir e criar um ambiente de diálogo'},{key:'E',label:'Apresentar fatos e evidências para embasar minha fala'}]},
+        {title:"Para prender a atenção, confio no meu…",options:[{key:'A',label:'Poder de persuasão e na força dos argumentos'},{key:'B',label:'Energia, paixão e na capacidade de inspirar'},{key:'C',label:'Organização, didática e na clareza da explicação'},{key:'D',label:'Empatia, autenticidade e na conexão com as pessoas'},{key:'E',label:'Conhecimento técnico e na minha credibilidade'}]},
+        {title:"Me vejo mais como alguém que é…",options:[{key:'A',label:'Persuasivo e orientado a resultados'},{key:'B',label:'Motivador e carismático'},{key:'C',label:'Didático e organizado'},{key:'D',label:'Acessível e empático'},{key:'E',label:'Técnico e especialista no assunto'}]}
+      ];
+      const keyToProfile={
+        A:{name:'Vendedor',desc:'Persuasivo e focado em resultados. Sua força está em convencer e influenciar decisões.'},
+        B:{name:'Inspirador',desc:'Emocional, motivacional e carismático. Você se destaca por conectar emocionalmente e motivar a ação.'},
+        C:{name:'Instrutor',desc:'Didático, organizado e claro. Sua principal habilidade é transmitir conhecimento eficazmente.'},
+        D:{name:'Conector',desc:'Empático, próximo e acessível. Você tem a capacidade de criar relacionamentos genuínos.'},
+        E:{name:'Autoridade',desc:'Técnico, respeitado e confiável. Sua credibilidade e expertise são seus maiores trunfos.'}
+      };
+      let current=0,answers=[];
+      const qIndexEl=document.getElementById('qIndex'),barEl=document.getElementById('bar'),qContainer=document.getElementById('qContainer');
+      const startBtn=document.getElementById('startBtn'),nextBtn=document.getElementById('nextBtn'),prevBtn=document.getElementById('prevBtn'),resetBtn=document.getElementById('resetBtn');
+      function goTo(step){['step-welcome','step-questions','step-processing','step-result'].forEach((id,idx)=>document.getElementById(id).classList.toggle('active',idx===step));if(step===1){current=0;answers=[];renderQ();updateProgress();}}
+      function renderQ(){const q=questions[current];qIndexEl.textContent=current+1;let html=`<h2 style=\"margin:8px 0 16px 0; color:var(--primary); font-size: 1.6rem; line-height: 1.3;\">${q.title}</h2><fieldset class=\"options\">`;q.options.forEach(opt=>html+=`<label class='opt'><input type='radio' name='q${current}' value='${opt.key}'/><span><strong>${opt.key})</strong> ${opt.label}</span></label>`);html+='</fieldset>';qContainer.innerHTML=html;}
+      function updateProgress(){barEl.style.width=((current)/questions.length*100)+'%';}
+      function nextQ(){const sel=document.querySelector(`input[name='q${current}']:checked`);if(!sel){alert('Selecione uma alternativa para continuar.');return;}answers[current]=sel.value;if(current<questions.length-1){current++;renderQ();updateProgress();}else{barEl.style.width='100%';processResult();}}
+      function prevQ(){if(current===0)goTo(0);else{current--;renderQ();updateProgress();}}
+      function processResult(){goTo(2);const msgs=['Analisando suas respostas…','Calculando seu perfil de comunicador…','Concluído.'];let i=0;const pm=document.getElementById('procMsg');(function tick(){pm.textContent=msgs[i++];if(i<msgs.length)setTimeout(tick,900);else setTimeout(showResult,600);})();}
+      function showResult(){const counts={A:0,B:0,C:0,D:0,E:0};answers.forEach(k=>counts[k]++);const sorted=Object.entries(counts).sort((a,b)=>b[1]-a[1]),top=sorted[0],second=sorted[1];const resTitle=document.getElementById('resTitle'),resSubtitle=document.getElementById('resSubtitle'),resPill=document.getElementById('resPill');if(top[1]===second[1]&&top[1]!==0){const p1=keyToProfile[top[0]].name,p2=keyToProfile[second[0]].name;resTitle.textContent=`${p1} + ${p2}`;resSubtitle.textContent=`Você transita entre os perfis ${p1} e ${p2}, unindo o melhor dos dois mundos.`;resPill.textcontent=`Empate: ${top[1]}×${second[1]}`;}else{const p=keyToProfile[top[0]];resTitle.textContent=p.name;resSubtitle.textContent=p.desc;resPill.textContent=`Predominante: ${top[1]} ponto(s)`;}goTo(3);}
+      startBtn.addEventListener('click',()=>goTo(1));
+      nextBtn.addEventListener('click',nextQ);
+      prevBtn.addEventListener('click',prevQ);
+      resetBtn.addEventListener('click',()=>goTo(0));
+    });
+  </script>
+</body>
+</html>
