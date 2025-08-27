@@ -52,9 +52,26 @@
     .brand-badge {
       margin-bottom: 24px;
     }
-    .brand-badge img {
+    .logo {
       height: 100px;
-      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      font-weight: 700;
+      font-size: 2.2rem;
+      color: var(--accent);
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    .small-logo {
+      height: 70px;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     h1, h2, h3 {
       font-family: 'Montserrat', sans-serif;
@@ -113,10 +130,6 @@
       justify-content: space-between;
       gap: 16px;
       margin-bottom: 20px;
-    }
-    .q-header img {
-      height: 70px;
-      opacity: .8;
     }
     .progress {
       height: 10px;
@@ -240,9 +253,14 @@
       text-align: center;
       color: var(--muted);
     }
-    footer img {
+    .footer-logo {
       height: 50px;
-      opacity: .8;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-bottom: 12px;
     }
   </style>
@@ -252,7 +270,7 @@
     <section id="step-welcome" class="step active">
       <div class="card center">
         <div class="brand-badge">
-          <img src="https://via.placeholder.com/300x100/333333/C7A462?text=Leader's+Academy" alt="Leader's Academy — Logo" />
+          <div class="logo">LEADER'S ACADEMY</div>
         </div>
         <h1>Descubra Seu Perfil de Comunicador</h1>
         <p class="lead">Um diagnóstico rápido para você se comunicar com mais clareza, impacto e verdade.</p>
@@ -265,7 +283,7 @@
         <div class="q-header">
           <div style="font-weight:600;color:var(--primary)"><span id="qIndex">1</span>/4</div>
           <div class="progress"><div id="bar"></div></div>
-          <img src="https://via.placeholder.com/150x50/333333/C7A462?text=Logo" alt="Leader's Academy" />
+          <div class="small-logo">LA</div>
         </div>
         <div id="qContainer"></div>
         <div class="btn-row">
@@ -292,7 +310,7 @@
       <div class="card">
         <div class="center">
           <div class="brand-badge">
-            <img src="https://via.placeholder.com/300x100/333333/C7A462?text=Leader's+Academy" alt="Leader's Academy — Logo" />
+            <div class="logo">LEADER'S ACADEMY</div>
           </div>
           <h2 class="result-title" id="resTitle"></h2>
           <p id="resSubtitle" class="muted"></p>
@@ -341,7 +359,7 @@
     </section>
 
     <footer>
-      <img src="https://via.placeholder.com/150x50/333333/C7A462?text=Logo" alt="Leader's Academy"/>
+      <div class="footer-logo">LEADER'S ACADEMY</div>
       <small class="muted">Desenvolvido por Paulo Afonso</small>
     </footer>
   </div>
